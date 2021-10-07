@@ -199,7 +199,7 @@ h3 {
 .Menu .boxs {
   flex-grow: 1;
 }
-.Menu .boxs .box{
+.Menu .boxs .box {
   margin: 35px 0;
 }
 .Menu .boxs h1 {
@@ -216,7 +216,7 @@ h3 {
   margin: 10px 0;
 }
 @media (max-width: 768px) {
-  .Menu .container{
+  .Menu .container {
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
@@ -227,75 +227,75 @@ h3 {
 }
 /* End Menu */
 /* Start Contact */
-.Contact{
+.Contact {
   padding: 100px 0;
 }
-.Contact .container h1{
+.Contact .container h1 {
   letter-spacing: 3px;
   font-size: 40px;
   font-weight: normal;
   margin: 40px 0;
 }
-.Contact .container p{
+.Contact .container p {
   font-size: 18px;
   line-height: 1.6;
   margin: 20px 0;
 }
-.Contact .container h4{
-  color:#607d8b;
+.Contact .container h4 {
+  color: #607d8b;
 }
-.Contact .container form{
+.Contact .container form {
   display: flex;
   flex-direction: column;
 }
-.Contact .container form input{
+.Contact .container form input {
   border: none;
   border-bottom: 1px #ccc solid;
   padding: 15px;
   margin: 10px 0;
 }
-.Contact .container form input:nth-child(5){
+.Contact .container form input:nth-child(5) {
   align-self: baseline;
 }
-.Contact .container form input:nth-child(5):hover{
+.Contact .container form input:nth-child(5):hover {
   cursor: pointer;
   opacity: 80%;
 }
 @media (max-width: 768px) {
-  .Contact .container{
+  .Contact .container {
     text-align: center;
   }
 }
 /* End Contact */
 /* Start footer */
-footer{
+footer {
   background-color: #f1f1f1;
   padding: 50px;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-footer a{
+footer a {
   text-decoration: none;
   color: #000;
 }
-footer a i{
+footer a i {
   font-size: 35px;
-  margin:0 5px;
+  margin: 0 5px;
 }
-footer .fa-twitter-square:hover{
+footer .fa-twitter-square:hover {
   color: #337ab7;
 }
-footer .fa-facebook-square:hover{
-  color:#3b5998;
+footer .fa-facebook-square:hover {
+  color: #3b5998;
 }
-footer .fa-google-plus-square:hover{
-  color:#cd201f;
+footer .fa-google-plus-square:hover {
+  color: #cd201f;
 }
-footer .fa-instagram-square:hover{
-  color:#c60043;
+footer .fa-github:hover {
+  color: #c60043;
 }
-footer .fa-heart{
+footer .fa-heart {
   font-size: 18px;
   color: red;
 }
