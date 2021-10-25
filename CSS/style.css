@@ -24,8 +24,8 @@ hr {
   border: 0;
   margin: 20px auto;
 }
-@media (max-width:768px) {
-  hr{
+@media (max-width: 768px) {
+  hr {
     width: calc(100% - 50px);
   }
 }
@@ -114,11 +114,36 @@ header .container nav ul a {
   font-size: large;
   color: black;
   text-decoration: none;
-  transition-duration: 0.4s;
+  transition-duration: 0.5s;
+  display: block;
+  position: relative;
 }
-header .container nav ul a:hover {
-  border-bottom: black solid 1px;
+header .container nav ul a::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: black;
+  transition-duration: 0.5s;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
 }
+header .container nav ul a:hover::after {
+  width: 100%;
+}
+/* header .container nav ul a::before {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: black;
+  transition-duration: 0.5s;
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+}
+header .container nav ul a:hover::before {
+  width: 100%;
+} */
 header nav .icon:hover + ul a {
   padding: 10px 5px;
   display: block;
@@ -251,8 +276,8 @@ h3 {
     font-size: 15px;
   }
   .Menu .boxs .box h3::before,
-  .Menu .boxs .box p::before{
-    display:none;
+  .Menu .boxs .box p::before {
+    display: none;
   }
 }
 /* End Menu */
