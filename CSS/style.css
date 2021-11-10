@@ -118,32 +118,22 @@ header .container nav ul a {
   display: block;
   position: relative;
 }
-header .container nav ul a::after {
+header .container nav ul a::after ,
+header .container nav ul a::before {
   content: "";
   width: 0;
-  height: 1px;
+  height: 2px;
   background-color: black;
   transition-duration: 0.5s;
   position: absolute;
   bottom: -3px;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
-header .container nav ul a:hover::after {
-  width: 100%;
-}
-/* header .container nav ul a::before {
-  content: "";
-  width: 0;
-  height: 1px;
-  background-color: black;
-  transition-duration: 0.5s;
-  position: absolute;
-  bottom: -3px;
-  right: 0;
-}
+header .container nav ul a:hover::after ,
 header .container nav ul a:hover::before {
-  width: 100%;
-} */
+  width:100%;
+}
 header nav .icon:hover + ul a {
   padding: 10px 5px;
   display: block;
